@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    color: #007bff; /* Cor de destaque para os títulos */
+    font-size: 1.5em;
+    text-align: center; /* Centraliza os títulos */
+    margin-bottom: 20px; /* Espaçamento abaixo dos títulos */
+    border-bottom: 2px solid #007bff; /* Linha abaixo dos títulos para destaque */
+    padding-bottom: 10px; /* Espaço entre o texto e a linha */
+}
+
+h3 {
+    color: #333; /* Cor de texto escura */
+}
+
+a {
+    color: #007bff; /* Azul original */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ol {
+    margin: 0;
+    padding-left: 0; /* Remove o padding padrão da lista */
+    list-style: none; /* Remove a numeração padrão */
+}
+
+ol li {
+    position: relative;
+    padding-left: 40px; /* Espaço para o círculo */
+    margin-bottom: 10px; /* Espaçamento entre itens */
+}
+
+ol li::before {
+    content: counter(list-item);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #007bff; /* Azul do círculo */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* Bloco de código */
+.code-block {
+    background-color: #f8f9fa;
+    border: 1px solid #e1e1e1;
+    padding: 10px;
+    margin: 10px 0;
+    font-family: monospace;
+    white-space: pre-wrap;
+}
+
+/* Ferramentas */
+.tools {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.tool {
+    text-align: center;
+}
+
+.tool i {
+    font-size: 2em;
+    color: #007bff; /* Azul original */
+}
+
+.footer {
+    background-color: #f8f9fa; /* Cor de fundo do rodapé */
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #e1e1e1; /* Borda do rodapé */
+}
+
+.social-links a {
+    color: #007bff; /* Azul original */
+    margin: 0 10px;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #0056b3; /* Cor escura para hover */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .tools {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tool {
+        margin-bottom: 15px;
+    }
+
+    .tool i {
+        font-size: 1.5em;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.25em;
+    }
+
+    .tool i {
+        font-size: 1.2em;
+    }
+
+    .social-links a {
+        font-size: 1.2em;
+    }
+}
